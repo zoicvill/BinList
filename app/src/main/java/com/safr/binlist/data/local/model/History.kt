@@ -9,7 +9,7 @@ import com.google.gson.annotations.SerializedName
 data class History
     (
     @PrimaryKey(autoGenerate = true)
-    var idHistory: Int?,
+    var idHistory: Int? = 0,
     @SerializedName("number") @Embedded var number: Number? = Number(),
     @SerializedName("scheme") var scheme: String? = null,
     @SerializedName("type") var type: String? = null,
