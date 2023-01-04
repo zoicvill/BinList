@@ -1,21 +1,15 @@
 package com.safr.binlist.data.local.dao
 
 import androidx.room.*
-import com.safr.binlist.data.local.model.Bank
-import com.safr.binlist.data.local.model.History
+import com.safr.binlist.data.local.model.HistoryEntity
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface HistoryDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(his: History) : Long
+    suspend fun insertHistory(card : HistoryEntity)
 
-    @Query("SELECT * FROM historyLocalMods")
-    suspend fun getFavourites() : List<History>
-
-    @Delete
-    suspend fun remove(cocktail: History)
-
-//    @Query("SELECT EXISTS(SELECT * FROM historyLocalMods WHERE bank = :id)")
-//    suspend fun isFavourite(id : Bank) : Boolean
+    @Query("SELECT * FROM historySend")
+    fun getAllHistory() : Flow<List<HistoryEntity>>
 }

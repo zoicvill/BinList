@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">BinList</string>
+    <string name="history_of_requests">История запросов</string>
+
+    <string name="enter_bin">Enter your card BIN here</string>
+    <string name="bin">BIN</string>
+    <string name="submit">Submit</string>
+    <string name="toast_enter">Please, enter your card BIN</string>
+    <string name="history_title">Response history</string>
+    <string name="nullable">\?</string>
+    <string name="type">Type</string>
+    <string name="bank">Bank</string>
+    <string name="scheme">Scheme</string>
+    <string name="country">Country</string>
+    <string name="city">City</string>
+    <string name="coordinates">Open Maps</string>
+    <string name="brand">Brand</string>
+    <string name="prepaid">Prepaid</string>
+    <string name="number">Number</string>
+    <string name="length">length</string>
+    <string name="url">url</string>
+    <string name="phone">phone</string>
+    <string name="lunh">lunh</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

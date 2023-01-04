@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    app:cardBackgroundColor="#00FFFFFF"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/teal_200"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_random"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/bankName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="BANK"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/urlSite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:autoLink="web"
+            android:text="www.www.www"
+            app:layout_constraintStart_toStartOf="@+id/country"
+            app:layout_constraintTop_toBottomOf="@+id/country" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:autoLink="phone"
+            android:text="phone"
+            app:layout_constraintBottom_toBottomOf="@+id/urlSite"
+            app:layout_constraintStart_toEndOf="@+id/urlSite"
+            app:layout_constraintTop_toTopOf="@+id/urlSite" />
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="country"
+            app:layout_constraintStart_toStartOf="@+id/bankName"
+            app:layout_constraintTop_toBottomOf="@+id/bankName" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/city"
+            app:layout_constraintBottom_toBottomOf="@+id/country"
+            app:layout_constraintStart_toEndOf="@+id/country"
+            app:layout_constraintTop_toTopOf="@+id/country" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autoLink="map"
+            android:text="@string/coordinates"
+            app:layout_constraintStart_toStartOf="@+id/urlSite"
+            app:layout_constraintTop_toBottomOf="@+id/urlSite" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

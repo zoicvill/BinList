@@ -1,10 +1,10 @@
 package com.safr.binlist.data.local.datasourse
 
-import com.safr.binlist.data.local.model.Bank
-import com.safr.binlist.data.local.model.History
+import com.safr.binlist.data.local.model.HistoryEntity
+import kotlinx.coroutines.flow.Flow
 
 interface LocalDataSource {
-    suspend fun insert(cocktail: History): Long?
+    suspend fun insert(binom: HistoryEntity)
 
-    suspend fun getBinom(): List<History>
+    fun getBinom(): Flow<List<HistoryEntity>>
 }

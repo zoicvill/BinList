@@ -1,8 +1,7 @@
 package com.safr.binlist.data.network.datasourse
 
-import com.safr.binlist.data.local.model.Bank
-import com.safr.binlist.data.local.model.History
+import com.safr.binlist.data.network.model.ResponseDataBank
 
 interface ApiDataSource {
-    suspend fun getBinlist(type: Int): History?
+    suspend fun getBinlist(type: Int): ResponseDataBank?
 }
